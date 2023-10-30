@@ -1,3 +1,9 @@
+import "@/app/ui/global.css";
+import { inter } from '@/app/ui/fonts';
+import { acme } from '@/app/ui/fonts';
+import { lusitana } from '@/app/ui/fonts';
+
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${acme.className} antialiased`}>{children}</body>
     </html>
   );
 }
